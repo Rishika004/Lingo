@@ -11,7 +11,7 @@ from typing import Any, Dict, List
 from google import genai
 from google.genai import types
 
-from postcraft.backend.agents.orchestrator import AgentState
+from backend.agents.orchestrator import AgentState
 
 
 def _build_writer_prompt(state: AgentState) -> str:

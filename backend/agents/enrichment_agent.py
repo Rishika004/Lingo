@@ -7,9 +7,9 @@ Routes to the correct enrichment strategy based on input_type:
 - text: cleans and structures the raw text input
 """
 
-from postcraft.backend.agents.orchestrator import AgentState
-from postcraft.backend.tools.github_tool import fetch_github_repo
-from postcraft.backend.tools.vision_tool import analyze_image
+from backend.agents.orchestrator import AgentState
+from backend.tools.github_tool import fetch_github_repo
+from backend.tools.vision_tool import analyze_image
 
 
 async def enrichment_node(state: AgentState) -> AgentState:

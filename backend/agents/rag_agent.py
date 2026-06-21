@@ -4,8 +4,8 @@ Retrieves the 5 most similar posts from the style_library using pgvector.
 Uses the enriched summary as the search query.
 """
 
-from postcraft.backend.agents.orchestrator import AgentState
-from postcraft.backend.memory.supabase_rag import retrieve_similar_posts
+from backend.agents.orchestrator import AgentState
+from backend.memory.supabase_rag import retrieve_similar_posts
 
 
 async def rag_node(state: AgentState) -> AgentState:

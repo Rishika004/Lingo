@@ -3,7 +3,7 @@ Critic Agent Node — fast heuristic scorer (no LLM call).
 Scores variants instantly based on hook strength, structure, and CTA presence.
 """
 
-from postcraft.backend.agents.orchestrator import AgentState
+from backend.agents.orchestrator import AgentState
 
 _HOOK_WORDS = {"i ", "we ", "you ", "here's", "why ", "how ", "what ", "the truth", "stop ", "unpopular", "honest"}
 _CTA_WORDS = {"comment", "dm", "follow", "share", "thoughts", "let me know", "reach out", "connect"}

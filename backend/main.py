@@ -14,9 +14,9 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-from postcraft.backend.agents.orchestrator import AgentState, get_graph
-from postcraft.backend.memory.supabase_rag import log_event, store_draft
-from postcraft.backend.tools.linkedin_tool import post_to_linkedin
+from backend.agents.orchestrator import AgentState, get_graph
+from backend.memory.supabase_rag import log_event, store_draft
+from backend.tools.linkedin_tool import post_to_linkedin
 
 app = FastAPI(title="PostCraft API", version="1.0.0")
 
